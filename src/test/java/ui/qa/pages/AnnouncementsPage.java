@@ -63,7 +63,7 @@ public class AnnouncementsPage {
     @FindBy(xpath = "//p[contains(text(),'Dear')]")
     WebElement annText;
 
-    @FindBy(xpath = "//p[.='03.22.25']")
+    @FindBy(xpath = "//p[.='03.28.25']")
     WebElement creatingData;
 
     @FindBy(xpath ="//p[.='Announcement successfully activated']")

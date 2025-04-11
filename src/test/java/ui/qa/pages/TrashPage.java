@@ -25,13 +25,13 @@ public class TrashPage {
     @FindBy(xpath = "//tbody//tr[1]//td")
     List<WebElement> deletedItem;
 
-    @FindBy(xpath = "/html/body/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[3]/div/*[2]")
+    @FindBy(xpath = "//tbody/tr[1]/td[3]/div/*[2]")
     WebElement deleteFromTrashButton;
 
     @FindBy(xpath = "//div[@class='sc-bWOGAC jjzJTo']//*[2]")
     List<WebElement> firstLine;
 
-    @FindBy(xpath = "/html/body/div/div/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[3]/div/*[1]")
+    @FindBy(xpath = "//tbody/tr[1]/td[3]/div/*[1]")
     WebElement recoverFromTrashButton;
 
     @FindBy(xpath = "//p[.='Data deleted successfully']")

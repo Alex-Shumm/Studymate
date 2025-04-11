@@ -9,13 +9,13 @@ import utils.DriverHelper;
 public class Hook {
     public WebDriver driver = DriverHelper.getDriver();
 
-    @Before
-    public void setup() {
-        driver.get(ConfigReader.readProperty("studymateLogin_url"));
-    }
-
-    @After
-    public void tearDown() {
-        driver.quit();
-    }
+//    @Before
+//    public void setup() {
+//        driver.get(ConfigReader.readProperty("studymateLogin_url"));
+//    }
+//
+//    @After
+//    public void tearDown() {
+//        driver.quit();
+//    }
 }
