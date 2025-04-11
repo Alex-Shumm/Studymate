@@ -1,6 +1,5 @@
 package api.qa.endpints;
 
-import api.qa.pojos.PJ_Announcement;
 import api.qa.pojos.PJ_Trash;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -27,7 +26,6 @@ public class EP_Trash {
     public void validateDeletedItem(String expectedName, String expectedType, String expectedItemID, String expectedDate, String expectedRestorer, String courseId){
         RestAssured.baseURI = ConfigReader.readProperty("base_url");
         RestAssured.basePath = ConfigReader.readProperty("get_trash");
-
         Response response = RestAssured.given().header(contentType, json).accept(ContentType.JSON)
                 .header("Origin", ConfigReader.readProperty("origin"))
                 .header("Authorization", ConfigReader.readProperty("token"))
