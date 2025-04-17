@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Feature: Testing Trash End Points</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>CucumberB8-Cucumber-Report</td>
+        <td>1</td>
+      <td>10 Apr 2025, 22:06</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Testing Trash End Points</td>
+          <td >0</td>
+          <td      class="failed"    >3</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">3</td>
+
+          <td >0</td>
+          <td  class="failed"    >3</td>
+          <td class="total">3</td>
+
+          <td class="duration" data-value="1702138100">1.702</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149487065.html">@api</a>
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Testing Trash End Points</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149487065.html">@api</a>
+</div>
+
+
+  <span class="lead-duration duration">0.570</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Happy Path Get All Trash's Items (GET)</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User validates name <span class="argument">'Test Test'</span>, type <span class="argument">'STUDENT'</span>, entityId <span class="argument">'287'</span>, createdAt <span class="argument">'2025-04-10'</span>, restorer <span class="argument">'ADMIN'</span>, courseId <span class="argument">'0'</span></span>
+
+  <span class="lead-duration duration">0.570</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>java.lang.IndexOutOfBoundsException:</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at api.qa.endpints.EP_Trash.validateDeletedItem(EP_Trash.java:37)
+	at api.qa.stepdefinitions.SD_Trash.user_validates_name_type_entity_id_created_at_restorer_course_id(SD_Trash.java:11)
+	at &#10045;.User validates name 'Test Test', type 'STUDENT', entityId '287', createdAt '2025-04-10', restorer 'ADMIN', courseId '0'(file:///C:/Users/shuma/IdeaProjects/Studymate/src/test/resources/api_features/Trash.feature:5)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149487065.html">@api</a>
+</div>
+
+
+  <span class="lead-duration duration">0.554</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Happy Path Recover From Trash (PUT)</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User validates message <span class="argument">'Data successfully recovered'</span> recover and check it again</span>
+
+  <span class="lead-duration duration">0.554</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>java.lang.IndexOutOfBoundsException:</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at api.qa.endpints.EP_Trash.getTrashID(EP_Trash.java:24)
+	at api.qa.endpints.EP_Trash.validateRecoverFromTrash(EP_Trash.java:46)
+	at api.qa.stepdefinitions.SD_Trash.user_validates_message_recover_and_check_it_again(SD_Trash.java:16)
+	at &#10045;.User validates message 'Data successfully recovered' recover and check it again(file:///C:/Users/shuma/IdeaProjects/Studymate/src/test/resources/api_features/Trash.feature:8)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149487065.html">@api</a>
+</div>
+
+
+  <span class="lead-duration duration">0.577</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Happy Path Delete From Trash (DELETE)</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User validates message <span class="argument">'Data deleted successfully'</span> delete and check it again</span>
+
+  <span class="lead-duration duration">0.577</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
+          <a>java.lang.IndexOutOfBoundsException:</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details  in ">
+        <pre>java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at api.qa.endpints.EP_Trash.getTrashID(EP_Trash.java:24)
+	at api.qa.endpints.EP_Trash.validateDeleteFromTrash(EP_Trash.java:63)
+	at api.qa.stepdefinitions.SD_Trash.user_validates_message_delete_and_check_it_again(SD_Trash.java:21)
+	at &#10045;.User validates message 'Data deleted successfully' delete and check it again(file:///C:/Users/shuma/IdeaProjects/Studymate/src/test/resources/api_features/Trash.feature:12)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
