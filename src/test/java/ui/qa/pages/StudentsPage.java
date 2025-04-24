@@ -98,10 +98,17 @@ public class StudentsPage {
         }
     }
 
+<<<<<<< HEAD
 //    public void validationStudentPage(WebDriver driver, String expectedUrl) {
 //        studentsButton.click();
 //        Assert.assertEquals(expectedUrl, driver.getCurrentUrl());
 //    }
+=======
+    public void validationStudentPage(WebDriver driver, String expectedUrl) {
+        studentsButton.click();
+        Assert.assertEquals(expectedUrl, driver.getCurrentUrl());
+    }
+>>>>>>> a2449daa31dd99644a30ecd6ac12006d2ac9672e
 
     public void clickAddStudentsButton() {
         addStudentButton.click();

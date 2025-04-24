@@ -72,7 +72,7 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <includes>
-                        <include>runners/APIRunner</include>
+                        <include>runners/Runner</include>
                     </includes>
                 </configuration>
             </plugin>
@@ -83,7 +83,7 @@
                 <executions>
                     <execution>
                         <id>execution</id>
-                        <phase>verify</phase>
+                        <phase>test</phase>
                         <goals>
                             <goal>generate</goal>
                         </goals>
