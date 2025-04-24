@@ -1,7 +1,6 @@
 package api.qa.endpints;
 
 import api.qa.pojos.PJ_Announcement;
-import api.qa.pojos.PJ_Login;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
